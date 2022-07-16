@@ -1,0 +1,76 @@
+---
+title: "Week 1"
+---
+
+This file consists of exercises for the course
+*HarvardX PH525.1x Statistics and R* 
+
+*Agnesh Panta*
+
+
+*Exercise #2*
+Create a numeric vector containing the numbers 2.23, 3.45, 1.87, 2.11, 7.33, 18.34, 19.23.
+
+What is the average of these numbers?
+
+```{r}
+num_vec <- c(2.23, 3.45, 1.87, 2.11, 7.33, 18.34, 19.23)
+mean(num_vec)
+```
+*Exercise #3*
+Use a for loop to determine the value of $\sum_{i=1}^{25} i^2$
+
+```{r}
+sum_vec <- NULL
+
+for (i in 1:25) {
+  
+  sum_vec[i] = i^2
+  
+  total_sum = sum(sum_vec)
+  
+}
+
+total_sum
+```
+
+*Exercise #4*
+The cars dataset is available in base R. You can type cars to see it. Use the class() function to determine what type of object is cars.
+```{r}
+class(cars)
+```
+
+*Exercise #5*
+
+How many rows does the cars object have?
+```{r}
+nrow(cars)
+```
+*Exercise #6*
+
+What is the name of the second column of cars?
+
+```{r}
+names(cars[2])
+```
+*Exercise #7*
+
+The simplest way to extract the columns of a matrix or data.frame is using [. For example you can access the second column with cars[,2].
+
+What is the average distance traveled in this dataset?
+
+```{r}
+
+dist_traveled <- data.frame(dist=cars[,2])
+
+mean(dist_traveled[,1])
+
+```
+*Exercise #8*
+
+Familiarize yourself with the which() function. Which row of cars has a a distance of 85?
+
+```{r}
+which(cars[,2]==85)
+```
+

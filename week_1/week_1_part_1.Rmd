@@ -1,5 +1,6 @@
 ---
-title: "Week 1"
+title: "Week 1 Part 1"
+output: pdf_document
 ---
 
 This file consists of exercises for the course

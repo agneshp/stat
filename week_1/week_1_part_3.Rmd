@@ -80,7 +80,7 @@ avg_sleep <- dplyr::filter(msleep,order=='Primates') %>%
 ```
 
 ```{r}
-dat <- get(load('C:/Users/agnes/HESSENBOX-DA/R_Codes_and_Data/HarvardR/Project_1/skew.RData')) 
+dat <- get(load(url("http://courses.edx.org/c4x/HarvardX/PH525.1x/asset/skew.RData")))
 dim(dat)
 par(mfrow = c(3,3))
 for (k in 1:9) {
